@@ -20,7 +20,7 @@ assets:
 
 .generate: &generate
     stage: pages
-    image: jakzal/phpqa:php8.0-alpine
+    image: php:8.1-alpine
     needs:
         - assets
     script:
