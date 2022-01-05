@@ -4,7 +4,7 @@ stages:
 
 assets:
     stage: assets
-    image: node:16.4.2-alpine
+    image: node:17.3-alpine
     script:
         - npm install
         - node_modules/.bin/encore production
@@ -20,7 +20,7 @@ assets:
 
 .generate: &generate
     stage: pages
-    image: php:8.1-alpine
+    image: jakzal/phpqa:php8.0-alpine
     needs:
         - assets
     script:
