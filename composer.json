@@ -1,0 +1,10 @@
+{
+    "require": {
+        "sigwin/yassg": "^0.3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}
