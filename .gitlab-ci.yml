@@ -24,7 +24,7 @@ assets:
     needs:
         - assets
     script:
-        - mkdir node_modules
+        - mkdir -p node_modules
         - composer install
         - make build
     artifacts:
