@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5d02ad8a3f80d86f3fa93e895e2dd5c",
+    "content-hash": "90e2fddc149ecdbc4ed6b0ef81049091",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -307,16 +307,16 @@
         },
         {
             "name": "sigwin/yassg",
-            "version": "0.3.0",
+            "version": "dev-feat/init-stuff",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sigwinhq/yassg.git",
-                "reference": "153fc402c25c3ad2ba5a23a8b7b21d21906c59a8"
+                "reference": "1abdbb40c40aa5a6f0417c6e21c7a3fedc5a5d72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sigwinhq/yassg/zipball/153fc402c25c3ad2ba5a23a8b7b21d21906c59a8",
-                "reference": "153fc402c25c3ad2ba5a23a8b7b21d21906c59a8",
+                "url": "https://api.github.com/repos/sigwinhq/yassg/zipball/1abdbb40c40aa5a6f0417c6e21c7a3fedc5a5d72",
+                "reference": "1abdbb40c40aa5a6f0417c6e21c7a3fedc5a5d72",
                 "shasum": ""
             },
             "require": {
@@ -348,9 +348,9 @@
             "description": "Yet Another Static Site Generator",
             "support": {
                 "issues": "https://github.com/sigwinhq/yassg/issues",
-                "source": "https://github.com/sigwinhq/yassg/tree/0.3.0"
+                "source": "https://github.com/sigwinhq/yassg/tree/feat/init-stuff"
             },
-            "time": "2022-01-05T16:30:21+00:00"
+            "time": "2022-01-06T12:02:26+00:00"
         },
         {
             "name": "symfony/asset",
@@ -3180,7 +3180,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "sigwin/yassg": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

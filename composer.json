@@ -1,6 +1,6 @@
 {
     "require": {
-        "sigwin/yassg": "^0.3.0"
+        "sigwin/yassg": "dev-feat/init-stuff"
     },
     "config": {
         "allow-plugins": {
