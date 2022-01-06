@@ -1,10 +1,15 @@
 {
     "require": {
-        "sigwin/yassg": "dev-feat/init-stuff"
+        "sigwin\/yassg": "dev-feat\/init-stuff"
     },
     "config": {
         "allow-plugins": {
-            "symfony/runtime": true
+            "symfony\/runtime": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Foo\\": "src"
         }
     }
 }
