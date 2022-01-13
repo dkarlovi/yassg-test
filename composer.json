@@ -1,6 +1,6 @@
 {
     "require": {
-        "sigwin\/yassg": "dev-feat\/init-stuff"
+        "sigwin/yassg": "dev-main"
     },
     "config": {
         "allow-plugins": {
