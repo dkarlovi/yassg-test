@@ -311,12 +311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sigwinhq/yassg.git",
-                "reference": "a4dd3cc7ea432399cbd7d0db966515b4a3edf24c"
+                "reference": "601d3b895cfde1949d27cc322531ba7721e3fdd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sigwinhq/yassg/zipball/a4dd3cc7ea432399cbd7d0db966515b4a3edf24c",
-                "reference": "a4dd3cc7ea432399cbd7d0db966515b4a3edf24c",
+                "url": "https://api.github.com/repos/sigwinhq/yassg/zipball/601d3b895cfde1949d27cc322531ba7721e3fdd1",
+                "reference": "601d3b895cfde1949d27cc322531ba7721e3fdd1",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 "issues": "https://github.com/sigwinhq/yassg/issues",
                 "source": "https://github.com/sigwinhq/yassg/tree/main"
             },
-            "time": "2022-01-27T14:44:52+00:00"
+            "time": "2022-01-27T15:14:25+00:00"
         },
         {
             "name": "symfony/asset",
