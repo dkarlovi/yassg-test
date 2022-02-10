@@ -7,59 +7,6 @@
     "content-hash": "f8d4a13f312e09fa0579032a4011a6a4",
     "packages": [
         {
-            "name": "adbario/php-dot-notation",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/adbario/php-dot-notation.git",
-                "reference": "eee4fc81296531e6aafba4c2bbccfc5adab1676e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/adbario/php-dot-notation/zipball/eee4fc81296531e6aafba4c2bbccfc5adab1676e",
-                "reference": "eee4fc81296531e6aafba4c2bbccfc5adab1676e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0|^5.0|^6.0",
-                "squizlabs/php_codesniffer": "^3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Adbar\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Riku Särkinen",
-                    "email": "riku@adbar.io"
-                }
-            ],
-            "description": "PHP dot notation access to arrays",
-            "homepage": "https://github.com/adbario/php-dot-notation",
-            "keywords": [
-                "ArrayAccess",
-                "dotnotation"
-            ],
-            "support": {
-                "issues": "https://github.com/adbario/php-dot-notation/issues",
-                "source": "https://github.com/adbario/php-dot-notation/tree/2.x"
-            },
-            "time": "2019-01-01T23:59:15+00:00"
-        },
-        {
             "name": "bentools/cartesian-product",
             "version": "1.4",
             "source": {
@@ -311,26 +258,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sigwinhq/yassg.git",
-                "reference": "601d3b895cfde1949d27cc322531ba7721e3fdd1"
+                "reference": "5ebc45190416f75727618f8027617503fe7a8321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sigwinhq/yassg/zipball/601d3b895cfde1949d27cc322531ba7721e3fdd1",
-                "reference": "601d3b895cfde1949d27cc322531ba7721e3fdd1",
+                "url": "https://api.github.com/repos/sigwinhq/yassg/zipball/5ebc45190416f75727618f8027617503fe7a8321",
+                "reference": "5ebc45190416f75727618f8027617503fe7a8321",
                 "shasum": ""
             },
             "require": {
-                "adbario/php-dot-notation": "^2.2",
                 "bentools/cartesian-product": "^1.3",
                 "php": "^8.0",
                 "symfony/console": "^5.4 || ^6.0",
                 "symfony/expression-language": "^5.4 || ^6.0",
+                "symfony/filesystem": "^5.4 || ^6.0",
+                "symfony/finder": "^5.4 || ^6.0",
                 "symfony/form": "^5.4 || ^6.0",
                 "symfony/framework-bundle": "^5.4 || ^6.0",
                 "symfony/runtime": "^5.4 || ^6.0",
                 "symfony/security-csrf": "^5.4 || ^6.0",
+                "symfony/serializer": "^5.4 || ^6.0",
+                "symfony/stopwatch": "^5.4 || ^6.0",
                 "symfony/translation": "^5.4 || ^6.0",
                 "symfony/twig-bundle": "^5.4 || ^6.0",
+                "symfony/web-profiler-bundle": "^5.4 || ^6.0",
                 "symfony/webpack-encore-bundle": "^1.13",
                 "symfony/yaml": "^5.4 || ^6.0"
             },
@@ -356,7 +307,7 @@
                 "issues": "https://github.com/sigwinhq/yassg/issues",
                 "source": "https://github.com/sigwinhq/yassg/tree/main"
             },
-            "time": "2022-01-27T15:14:25+00:00"
+            "time": "2022-02-10T11:46:13+00:00"
         },
         {
             "name": "symfony/asset",
@@ -2913,6 +2864,107 @@
             "time": "2021-12-08T15:13:44+00:00"
         },
         {
+            "name": "symfony/serializer",
+            "version": "v6.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/serializer.git",
+                "reference": "8a81ecc4f0ca229961c6c2d699e634bf6f80c4fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/8a81ecc4f0ca229961c6c2d699e634bf6f80c4fc",
+                "reference": "8a81ecc4f0ca229961c6c2d699e634bf6f80c4fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "doctrine/annotations": "<1.12",
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/dependency-injection": "<5.4",
+                "symfony/property-access": "<5.4",
+                "symfony/property-info": "<5.4",
+                "symfony/uid": "<5.4",
+                "symfony/yaml": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.12",
+                "phpdocumentor/reflection-docblock": "^3.2|^4.0|^5.0",
+                "symfony/cache": "^5.4|^6.0",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/error-handler": "^5.4|^6.0",
+                "symfony/filesystem": "^5.4|^6.0",
+                "symfony/form": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/mime": "^5.4|^6.0",
+                "symfony/property-access": "^5.4|^6.0",
+                "symfony/property-info": "^5.4|^6.0",
+                "symfony/uid": "^5.4|^6.0",
+                "symfony/validator": "^5.4|^6.0",
+                "symfony/var-dumper": "^5.4|^6.0",
+                "symfony/var-exporter": "^5.4|^6.0",
+                "symfony/yaml": "^5.4|^6.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "For using the metadata cache.",
+                "symfony/config": "For using the XML mapping loader.",
+                "symfony/mime": "For using a MIME type guesser within the DataUriNormalizer.",
+                "symfony/property-access": "For using the ObjectNormalizer.",
+                "symfony/property-info": "To deserialize relations.",
+                "symfony/var-exporter": "For using the metadata compiler.",
+                "symfony/yaml": "For using the default YAML mapping loader."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Serializer\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/serializer/tree/v6.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-26T17:34:56+00:00"
+        },
+        {
             "name": "symfony/service-contracts",
             "version": "v3.0.0",
             "source": {
@@ -2993,6 +3045,68 @@
                 }
             ],
             "time": "2021-11-04T17:53:12+00:00"
+        },
+        {
+            "name": "symfony/stopwatch",
+            "version": "v6.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/stopwatch.git",
+                "reference": "6835045bb9f00fa4486ea4f1bcaf623be761556f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/6835045bb9f00fa4486ea4f1bcaf623be761556f",
+                "reference": "6835045bb9f00fa4486ea4f1bcaf623be761556f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/service-contracts": "^1|^2|^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a way to profile code",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/stopwatch/tree/v6.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-02T09:55:41+00:00"
         },
         {
             "name": "symfony/string",
@@ -3618,6 +3732,85 @@
                 }
             ],
             "time": "2021-11-22T10:44:58+00:00"
+        },
+        {
+            "name": "symfony/web-profiler-bundle",
+            "version": "v6.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/web-profiler-bundle.git",
+                "reference": "52925a842e202aae4b0b2257023783fb67b5687b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/52925a842e202aae4b0b2257023783fb67b5687b",
+                "reference": "52925a842e202aae4b0b2257023783fb67b5687b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/framework-bundle": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/routing": "^5.4|^6.0",
+                "symfony/twig-bundle": "^5.4|^6.0",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<5.4",
+                "symfony/form": "<5.4",
+                "symfony/mailer": "<5.4",
+                "symfony/messenger": "<5.4"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "^5.4|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/css-selector": "^5.4|^6.0",
+                "symfony/stopwatch": "^5.4|^6.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\WebProfilerBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a development tool that gives detailed information about the execution of any request",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/web-profiler-bundle/tree/v6.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-02T09:55:41+00:00"
         },
         {
             "name": "symfony/webpack-encore-bundle",
